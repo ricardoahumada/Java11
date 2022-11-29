@@ -4,15 +4,23 @@ public class ProcesadorDNIs {
 
     private String valor_dni = "";
 
+    public ProcesadorDNIs() {
+    }
+    public ProcesadorDNIs(String valor) {
+        if ( validate_dni(valor) ) {
+            this.valor_dni = valor;
+        }
+    }
+
     public String getValor_dni() {
         return aMayusculas();
     }
 
     public void setValor_dni(String valor) {
-        boolean is_valid=validate_dni(valor);
-        if( !is_valid ){
+        boolean is_valid = validate_dni(valor);
+        if (!is_valid) {
             //
-        }else{
+        } else {
             this.valor_dni = valor;
         }
     }
