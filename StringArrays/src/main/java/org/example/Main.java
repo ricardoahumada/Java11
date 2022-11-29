@@ -5,9 +5,10 @@ public class Main {
     public static void main(String[] args) {
         ProcesadorDNIs ps= new ProcesadorDNIs();
 
-        ps.valor_dni ="Hola mundo!";
+        ps.setValor_dni( "12345678a");
+        System.out.println("valor dni:"+ps.getValor_dni());
 
-        String ref=ps.valor_dni;
+        /*String ref=ps.valor_dni;
 
         System.out.println(ps.valor_dni);
         System.out.println(ps.aMayusculas());
@@ -33,7 +34,7 @@ public class Main {
 
         var_2.reemplazar('a','x');
         System.out.println("var_2:"+var_2.valor_dni);
-        System.out.println("en array:"+ arr_ps[1].valor_dni);
+        System.out.println("en array:"+ arr_ps[1].valor_dni);*/
 
 
     }
