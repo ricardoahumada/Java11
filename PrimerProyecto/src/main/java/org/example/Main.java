@@ -10,6 +10,7 @@ public class Main {
 
         Operaciones op=new Operaciones();
         Operaciones op2=new Operaciones();
+        Operaciones op3=new Operaciones();
 
         op.ultima_operacion="ninguna";
         op2.ultima_operacion="vacio";
