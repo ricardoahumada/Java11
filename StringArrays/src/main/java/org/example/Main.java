@@ -13,6 +13,12 @@ public class Main {
         System.out.println("valor dni 2:"+ps2.getValor_dni());
 
 
+        ProcesadorDNIs ps3=new ProcesadorDNIs();
+        ProcesadorArrays pa=new ProcesadorArrays(ps,ps2, ps3);
+
+        System.out.println(pa.lista_dnis.length);
+        System.out.println("DNI 0:"+pa.lista_dnis[0].getValor_dni());
+
         /*String ref=ps.valor_dni;
 
         System.out.println(ps.valor_dni);
