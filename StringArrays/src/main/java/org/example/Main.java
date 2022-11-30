@@ -3,21 +3,28 @@ package org.example;
 public class Main {
 
     public static void main(String[] args) {
-        ProcesadorDNIs ps= new ProcesadorDNIs("hola mundo");
-        System.out.println("valor dni:"+ps.getValor_dni());
 
-        ps.setValor_dni( "12345678a");
-        System.out.println("valor dni:"+ps.getValor_dni());
+        ProcesadorDNIs ps = new ProcesadorDNIs("hola mundo");
+        System.out.println("valor dni:" + ps.getValor_dni());
 
-        ProcesadorDNIs ps2= new ProcesadorDNIs();
-        System.out.println("valor dni 2:"+ps2.getValor_dni());
+        ps.setValor_dni("12345678a");
+        System.out.println("valor dni:" + ps.getValor_dni());
+
+        ProcesadorDNIs ps2 = new ProcesadorDNIs();
+        System.out.println("valor dni 2:" + ps2.getValor_dni());
 
 
-        ProcesadorDNIs ps3=new ProcesadorDNIs();
-        ProcesadorArrays pa=new ProcesadorArrays(ps,ps2, ps3);
+        ProcesadorDNIs ps3 = new ProcesadorDNIs();
 
+        ProcesadorArrays pa = new ProcesadorArrays(ps, ps2, ps3);
         System.out.println(pa.lista_dnis.length);
-        System.out.println("DNI 0:"+pa.lista_dnis[0].getValor_dni());
+        System.out.println("DNI 0:" + pa.lista_dnis[0].getValor_dni());
+
+        ProcesadorArrays pa_mejor = new ProcesadorArrays(new ProcesadorDNIs[]{ps, ps2, ps3, new ProcesadorDNIs()});
+        System.out.println(pa_mejor.lista_dnis.length);
+        System.out.println("DNI 0:" + pa_mejor.lista_dnis[0].getValor_dni());
+
+
 
         /*String ref=ps.valor_dni;
 
