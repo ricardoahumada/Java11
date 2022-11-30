@@ -32,9 +32,14 @@ public class ProcesadorArrays {
 
         if (lista_dnis != null) {
             System.out.println("ProcesadorDNIs mostrarValores:" + lista_dnis.length);
-            for (int i = 0; i < lista_dnis.length; i++) {
+            /*for (int i = 0; i < lista_dnis.length; i++) {
                 System.out.println("Valor " + i + ": " + lista_dnis[i]);
+            }*/
+
+            for (ProcesadorDNIs pdni : lista_dnis) {
+                System.out.println("Valor: " + pdni);
             }
+
         } else {
             System.out.println("ProcesadorDNIs mostrarValores: está vacio");
         }
