@@ -28,7 +28,9 @@ public class Main {
         pa_mejor.mostrarValores();
 
         ProcesadorArrays pa_null=new ProcesadorArrays();
-        pa_null.mostrarValores();
+        pa_null.mostrarValores2();
+
+        System.out.println("FIN ejecución!!!");
 
         /*String ref=ps.valor_dni;
 

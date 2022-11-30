@@ -46,4 +46,19 @@ public class ProcesadorArrays {
 
     }
 
+    public void mostrarValores2() {
+
+        try {
+            System.out.println("ProcesadorDNIs mostrarValores:" + lista_dnis.length);
+            for (int i = 0; i < lista_dnis.length; i++) {
+                System.out.println("Valor " + i + ": " + lista_dnis[i]);
+            }
+        } catch (Exception ex) {
+            System.out.println("Error: " + ex.getMessage());
+        } finally {
+            System.out.println("Completado!");
+        }
+
+    }
+
 }
