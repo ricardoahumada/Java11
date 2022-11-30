@@ -25,7 +25,10 @@ public class Main {
         System.out.println(pa_mejor);
         System.out.println("DNI 0:" + pa_mejor.lista_dnis[0].getValor_dni());
 
+        pa_mejor.mostrarValores();
 
+        ProcesadorArrays pa_null=new ProcesadorArrays();
+        pa_null.mostrarValores();
 
         /*String ref=ps.valor_dni;
 
