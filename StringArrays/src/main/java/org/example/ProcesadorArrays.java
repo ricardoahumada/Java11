@@ -30,10 +30,15 @@ public class ProcesadorArrays {
 
     public void mostrarValores() {
 
-        System.out.println("ProcesadorDNIs mostrarValores:" + lista_dnis.length);
-        for (int i = 0; i < lista_dnis.length; i++) {
-            System.out.println("Valor " + i + ": " + lista_dnis[i]);
+        if (lista_dnis != null) {
+            System.out.println("ProcesadorDNIs mostrarValores:" + lista_dnis.length);
+            for (int i = 0; i < lista_dnis.length; i++) {
+                System.out.println("Valor " + i + ": " + lista_dnis[i]);
+            }
+        } else {
+            System.out.println("ProcesadorDNIs mostrarValores: está vacio");
         }
+
     }
 
 }
