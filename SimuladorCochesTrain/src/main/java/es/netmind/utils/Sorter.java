@@ -2,7 +2,7 @@ package es.netmind.utils;
 
 public class Sorter {
 
-    static public double PI = 3.14;
+    static final public double PI = 3.14;
 
     static public int encontrar_mas_rapido(double[] tiempos) {
         double min_tiempo = Integer.MAX_VALUE;
@@ -17,6 +17,7 @@ public class Sorter {
 
         return index_coche;
     }
+
 
 
 }

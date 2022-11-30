@@ -7,6 +7,8 @@ public class Coche {
     private boolean encendido = false;
     private double posicion = 0;
 
+    static public String elmasrapido = "";
+
     public Coche(String marca, String tipo, int velocidad) {
         this.marca = marca;
         this.tipo = tipo;

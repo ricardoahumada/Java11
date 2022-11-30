@@ -52,6 +52,10 @@ public class App {
             coche_actual.parar();
         }
 
+        Coche.elmasrapido="ferrari";
+        System.out.println("Ranault:" + coches[0].elmasrapido);
+        System.out.println("Ferrari:" + coches[2].elmasrapido);
+
         System.out.println("Tiempos:" + tiempos);
 
         int index_coche = Sorter.encontrar_mas_rapido(tiempos);
