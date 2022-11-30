@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ProcesadorArrays {
 
-    public ProcesadorDNIs[] lista_dnis = null;
+    protected ProcesadorDNIs[] lista_dnis = null;
 
     public ProcesadorArrays() {
 
