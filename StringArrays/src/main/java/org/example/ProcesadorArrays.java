@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Arrays;
+
 public class ProcesadorArrays {
 
     public ProcesadorDNIs[] lista_dnis = null;
@@ -13,6 +15,13 @@ public class ProcesadorArrays {
 
     public ProcesadorArrays(ProcesadorDNIs[] arrayPDnis) {
         this.lista_dnis = arrayPDnis;
+    }
+
+    @Override
+    public String toString() {
+        return "ProcesadorArrays{" +
+                "lista_dnis=" + Arrays.toString(lista_dnis) +
+                '}';
     }
 
 }

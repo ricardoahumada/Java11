@@ -17,12 +17,12 @@ public class Main {
         ProcesadorDNIs ps3 = new ProcesadorDNIs();
 
         ProcesadorArrays pa = new ProcesadorArrays(ps, ps2, ps3);
-        System.out.println(pa.lista_dnis.length);
+        System.out.println(pa);
         System.out.println("DNI 0:" + pa.lista_dnis[0].getValor_dni());
 
 
         ProcesadorArrays pa_mejor = new ProcesadorArrays(new ProcesadorDNIs[]{ps, ps2, ps3, new ProcesadorDNIs()});
-        System.out.println(pa_mejor.lista_dnis.length);
+        System.out.println(pa_mejor);
         System.out.println("DNI 0:" + pa_mejor.lista_dnis[0].getValor_dni());
 
 
