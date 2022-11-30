@@ -1,6 +1,7 @@
 package es.netmind;
 
 import es.netmind.models.Coche;
+import es.netmind.utils.Sorter;
 
 /**
  * Hello world!
@@ -53,15 +54,7 @@ public class App {
 
         System.out.println("Tiempos:" + tiempos);
 
-        double min_tiempo = Integer.MAX_VALUE;
-        int index_coche = -1;
-
-        for (int i = 0; i < tiempos.length; i++) {
-            if (tiempos[i] < min_tiempo) {
-                min_tiempo = tiempos[i];
-                index_coche = i;
-            }
-        }
+        int index_coche = Sorter.encontrar_mas_rapido(tiempos);
 
         System.out.println("Indice más ráido:" + index_coche);
         System.out.println("Coche más ráido:" + coches[index_coche]);
