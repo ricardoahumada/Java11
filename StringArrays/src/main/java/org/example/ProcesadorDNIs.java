@@ -38,4 +38,10 @@ public class ProcesadorDNIs {
         return isok;
     }
 
+    @Override
+    public String toString() {
+        return "ProcesadorDNIs{" +
+                "valor_dni='" + valor_dni + '\'' +
+                '}';
+    }
 }
