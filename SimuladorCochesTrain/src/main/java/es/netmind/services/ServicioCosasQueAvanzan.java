@@ -21,7 +21,7 @@ public class ServicioCosasQueAvanzan {
     }
 
     static public boolean guardarCosa(CosaQueAvanza cosa){
-        // validar y procesar cosa
-        return PersistenciaCosasQueSeMueven.guardarCosa(cosa);
+        if(cosa!=null) return PersistenciaCosasQueSeMueven.guardarCosa(cosa);
+        else return false;
     }
 }
