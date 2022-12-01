@@ -10,7 +10,8 @@ public class SUV extends Coche {
 
     @Override
     public double avanzar(int kms) {
-        return super.avanzar(kms) * 0.9;
+        if (this.traccion == 1) return super.avanzar(kms) * 0.95;
+        else return super.avanzar(kms) * 0.85;
         /*if (this.encendido) {
             this.posicion += kms;
 
