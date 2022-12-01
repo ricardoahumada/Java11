@@ -1,6 +1,7 @@
 package es.netmind;
 
 import es.netmind.models.*;
+import es.netmind.models.coche.*;
 import es.netmind.utils.Sorter;
 
 /**

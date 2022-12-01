@@ -1,4 +1,4 @@
-package es.netmind.models;
+package es.netmind.models.coche;
 
 public class Berlina extends Coche {
     private int num_puertas = 4;

@@ -1,6 +1,8 @@
-package es.netmind.models;
+package es.netmind.models.coche;
 
-public class Coche implements CosaQueAvanza{
+import es.netmind.models.CosaQueAvanza;
+
+public class Coche implements CosaQueAvanza {
     private String marca = null;
     private String tipo = null;
     private int velocidad = 0;

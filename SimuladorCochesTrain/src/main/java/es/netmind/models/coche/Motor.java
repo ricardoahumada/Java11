@@ -1,4 +1,4 @@
-package es.netmind.models;
+package es.netmind.models.coche;
 
 public class Motor {
     private int cv;
