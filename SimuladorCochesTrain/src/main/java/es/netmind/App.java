@@ -79,7 +79,6 @@ public class App {
             System.out.println("Oppss: tenemos problemas en el sistema...intentalo más tarde, please");
         }
 
-
         System.out.println("Fin simulación CosaQueAvanza!!");
 
     }

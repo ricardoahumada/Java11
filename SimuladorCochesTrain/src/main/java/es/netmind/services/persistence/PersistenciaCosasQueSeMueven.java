@@ -16,6 +16,5 @@ public class PersistenciaCosasQueSeMueven {
             throw new Exception("BBDD rota");
         }
 
-
     }
 }
