@@ -32,8 +32,8 @@ public class App {
         int traccion = toyota.traccion;
         System.out.println("traccion toyota:"+traccion);
 
-        SUV renault = (SUV) coches[0];
-        renault.cambiar_traccion();
+        /*SUV renault = (SUV) coches[0];
+        renault.cambiar_traccion();*/
 
 
         Coche.elmasrapido = "ferrari";
