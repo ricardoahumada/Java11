@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="es.netmind.AppTest" time="0.011" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="es.netmind.AppTest" time="0.05" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.specification.version" value="11"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\workspace\Java11\SimuladorCochesTrain\target\test-classes;C:\workspace\Java11\SimuladorCochesTrain\target\classes;C:\Users\admin\.m2\repository\junit\junit\4.2\junit-4.2.jar;"/>
+    <property name="java.class.path" value="C:\workspace\Java11\SimuladorCochesTrain\target\test-classes;C:\workspace\Java11\SimuladorCochesTrain\target\classes;C:\Users\admin\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\admin\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -17,9 +17,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="c:\java\bin"/>
-    <property name="sun.java.command" value="C:\Users\admin\AppData\Local\Temp\surefire8759949118830675351\surefirebooter4380065123452015949.jar C:\Users\admin\AppData\Local\Temp\surefire8759949118830675351 2022-12-01T08-10-20_505-jvmRun1 surefire16138831656238687700tmp surefire_018298945968647995987tmp"/>
+    <property name="sun.java.command" value="C:\Users\admin\AppData\Local\Temp\surefire371411961218599023\surefirebooter16552541002265714218.jar C:\Users\admin\AppData\Local\Temp\surefire371411961218599023 2022-12-01T09-22-00_696-jvmRun1 surefire14930779074810761217tmp surefire_02878758063962104748tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\workspace\Java11\SimuladorCochesTrain\target\test-classes;C:\workspace\Java11\SimuladorCochesTrain\target\classes;C:\Users\admin\.m2\repository\junit\junit\4.2\junit-4.2.jar;"/>
+    <property name="surefire.test.class.path" value="C:\workspace\Java11\SimuladorCochesTrain\target\test-classes;C:\workspace\Java11\SimuladorCochesTrain\target\classes;C:\Users\admin\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\admin\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\admin"/>
     <property name="user.language" value="es"/>
@@ -28,12 +28,12 @@
     <property name="java.home" value="c:\java"/>
     <property name="file.separator" value="\"/>
     <property name="basedir" value="C:\workspace\Java11\SimuladorCochesTrain"/>
-    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\admin\AppData\Local\Temp\surefire8759949118830675351\surefirebooter4380065123452015949.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\admin\AppData\Local\Temp\surefire371411961218599023\surefirebooter16552541002265714218.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11+28"/>
@@ -60,5 +60,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testApp" classname="es.netmind.AppTest" time="0.001"/>
+  <testcase name="testApp" classname="es.netmind.AppTest" time="0.012"/>
 </testsuite>

@@ -60,8 +60,8 @@ public class App {
 
         int index_coche = Sorter.encontrar_mas_rapido(tiempos);
 
-        System.out.println("Indice más ráido:" + index_coche);
-        System.out.println("Coche más ráido:" + coches[index_coche]);
+        System.out.println("Indice más rápido:" + index_coche);
+        System.out.println("Coche más rápido:" + coches[index_coche]);
 
         System.out.println("Fin de la simulación!!");
     }

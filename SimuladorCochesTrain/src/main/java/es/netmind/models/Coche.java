@@ -28,19 +28,19 @@ public class Coche {
             this.posicion += kms;
 
             if (this.velocidad != 0) {
-                return ((double) kms / (double) this.velocidad) * penalizar();
+                return ((double) kms / (double) this.velocidad);
             } else return 99999999;
         } else {
             return 0;
         }
     }
 
-    private double penalizar() {
+    /*private double penalizar() {
         if (this.tipo.equals("berlina")) return 1;
         else if (this.tipo.equals("suv")) return 0.9;
         else if (this.tipo.equals("deportivo")) return 1.1;
         else return 1;
-    }
+    }*/
 
     @Override
     public String toString() {
