@@ -20,8 +20,9 @@ public class ServicioCosasQueAvanzan {
         return cosas[index_cosa];
     }
 
-    static public boolean guardarCosa(CosaQueAvanza cosa){
+    static public boolean guardarCosa(CosaQueAvanza cosa) throws NullPointerException,Exception{
         if(cosa!=null) return PersistenciaCosasQueSeMueven.guardarCosa(cosa);
-        else return false;
+        else throw new NullPointerException("Valores nulos");
     }
+
 }

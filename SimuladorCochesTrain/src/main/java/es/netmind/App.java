@@ -64,13 +64,21 @@ public class App {
                 new Caballo()
         };
 
-        CosaQueAvanza laCosaMasRapida= ServicioCosasQueAvanzan.encontrar_mas_rapido(cosaQueAvanzan);
+        CosaQueAvanza laCosaMasRapida = ServicioCosasQueAvanzan.encontrar_mas_rapido(cosaQueAvanzan);
         System.out.println("Cosa más rápido:" + laCosaMasRapida);
 
         // ...
 
-        boolean resultado = ServicioCosasQueAvanzan.guardarCosa(null);
-        System.out.println("resultado almacenaje: "+ resultado);
+        try {
+            boolean resultado = ServicioCosasQueAvanzan.guardarCosa(null);
+            if (resultado) System.out.println("Se ha almacenado la cosa");
+            else System.out.println("NO se ha almacenado la cosa");
+        }catch (NullPointerException e){
+            System.out.println("ERROR: La cosa debe tener valores");
+        }catch (Exception e){
+            System.out.println("Oppss: tenemos problemas en el sistema...intentalo más tarde, please");
+        }
+
 
         System.out.println("Fin simulación CosaQueAvanza!!");
 
