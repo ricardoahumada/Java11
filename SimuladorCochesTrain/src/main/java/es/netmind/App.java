@@ -10,9 +10,11 @@ import es.netmind.utils.Sorter;
 public class App {
     public static void main(String[] args) {
         System.out.println("Iniciando la simulación ...");
+
+
         Coche[] coches = new Coche[]{
                 new Coche("Renault", "berlina", 120),
-                new SUV("Toyota", "suv", 110),
+                new SUV("Toyota", "suv", 110, 2),
                 new Coche("Ferrari", "deportivo", 300)
         };
 

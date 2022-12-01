@@ -8,19 +8,15 @@ public class SUV extends Coche {
         super(marca, tipo, velocidad);
     }
 
+    public SUV(String marca, String tipo, int velocidad, int num_marchas) {
+        super(marca, tipo, velocidad);
+        this.num_marchas = num_marchas;
+    }
+
     @Override
     public double avanzar(int kms) {
         if (this.traccion == 1) return super.avanzar(kms) * 0.95;
         else return super.avanzar(kms) * 0.85;
-        /*if (this.encendido) {
-            this.posicion += kms;
-
-            if (this.velocidad != 0) {
-                return ((double) kms / (double) this.velocidad) * 0.9;
-            } else return 99999999;
-        } else {
-            return 0;
-        }*/
     }
 
     public boolean cambiar_traccion() {

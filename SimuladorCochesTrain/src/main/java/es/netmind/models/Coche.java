@@ -9,6 +9,7 @@ public class Coche {
 
     static public String elmasrapido = "";
 
+
     public Coche(String marca, String tipo, int velocidad) {
         this.marca = marca;
         this.tipo = tipo;
