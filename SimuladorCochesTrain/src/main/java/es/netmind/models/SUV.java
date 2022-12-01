@@ -1,6 +1,6 @@
 package es.netmind.models;
 
-public class SUV extends Coche {
+public class SUV extends Coche  {
     public int num_marchas = 0;
     public int traccion = 1;
 

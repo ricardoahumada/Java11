@@ -1,9 +1,6 @@
 package es.netmind;
 
-import es.netmind.models.Berlina;
-import es.netmind.models.Coche;
-import es.netmind.models.Deportivo;
-import es.netmind.models.SUV;
+import es.netmind.models.*;
 import es.netmind.utils.Sorter;
 
 /**
@@ -15,9 +12,9 @@ public class App {
 
 
         Coche[] coches = new Coche[]{
-                new Berlina("Renault", "berlina", 120,3),
+                new Berlina("Renault", "berlina", 120, 3),
                 new SUV("Toyota", "suv", 110, 2),
-                new Deportivo("Ferrari", "deportivo", 300,250)
+                new Deportivo("Ferrari", "deportivo", 300, 250)
         };
 
         double[] tiempos = new double[]{0, 0, 0};
@@ -32,7 +29,7 @@ public class App {
         SUV toyota = (SUV) coches[1];
         toyota.cambiar_traccion();
         int traccion = toyota.traccion;
-        System.out.println("traccion toyota:"+traccion);
+        System.out.println("traccion toyota:" + traccion);
 
         /*SUV renault = (SUV) coches[0];
         renault.cambiar_traccion();*/
@@ -50,5 +47,29 @@ public class App {
         System.out.println("Coche más rápido:" + coches[index_coche]);
 
         System.out.println("Fin de la simulación!!");
+
+        System.out.println("Inicio simulación CosaQueAvanza ...");
+
+        CosaQueAvanza[] cosaQueAvanzan = new CosaQueAvanza[]{
+                new Berlina("Renault", "berlina", 120, 3),
+                new SUV("Toyota", "suv", 110, 2),
+                new Deportivo("Ferrari", "deportivo", 300, 250),
+                new Caballo()
+        };
+
+        tiempos = new double[cosaQueAvanzan.length];
+        for (int i = 0; i < cosaQueAvanzan.length; i++) {
+            CosaQueAvanza cosa = cosaQueAvanzan[i];
+            cosa.iniciar();
+            tiempos[i] = cosa.avanzar(100);
+            cosa.parar();
+        }
+
+        int index_cosa = Sorter.encontrar_mas_rapido(tiempos);
+        System.out.println("Indice más rápido:" + index_cosa);
+        System.out.println("Cosa más rápido:" + cosaQueAvanzan[index_cosa]);
+
+        System.out.println("Fin simulación CosaQueAvanza!!");
+
     }
 }

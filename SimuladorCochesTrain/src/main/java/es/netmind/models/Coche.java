@@ -1,6 +1,6 @@
 package es.netmind.models;
 
-public class Coche {
+public class Coche implements CosaQueAvanza{
     private String marca = null;
     private String tipo = null;
     private int velocidad = 0;
@@ -23,6 +23,12 @@ public class Coche {
     public void parar() {
         this.encendido = false;
     }
+
+    @Override
+    public void iniciar() {
+
+    }
+
 
     public double avanzar(int kms) {
         if (this.encendido) {

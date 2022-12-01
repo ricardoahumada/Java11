@@ -1,6 +1,6 @@
 package es.netmind.models;
 
-public class Deportivo extends Coche {
+public class Deportivo extends Coche{
     private int cv = 0;
 
     public Deportivo(String marca, String tipo, int velocidad,int cv) {
@@ -12,6 +12,7 @@ public class Deportivo extends Coche {
     public double avanzar(int kms) {
         return super.avanzar(kms) * cv / 100;
     }
+
 
     public int getCv() {
         return cv;
