@@ -2,6 +2,7 @@ package es.netmind;
 
 import es.netmind.models.*;
 import es.netmind.models.coche.*;
+import es.netmind.services.ServicioCosasQueAvanzan;
 import es.netmind.utils.Sorter;
 
 /**
@@ -12,7 +13,7 @@ public class App {
 
         /** Usando Herencia **/
 
-        System.out.println("Iniciando la simulación ...");
+        /*System.out.println("Iniciando la simulación ...");
 
 
         Coche[] coches = new Coche[]{
@@ -39,10 +40,6 @@ public class App {
         System.out.println("Motor toyota: " + toyota.getMotor());
         System.out.println("Motor toyota cvs: " + toyota.getMotor().getCv());
 
-        /*SUV renault = (SUV) coches[0];
-        renault.cambiar_traccion();*/
-
-
         Coche.elmasrapido = "ferrari";
         System.out.println("Ranault:" + coches[0].elmasrapido);
         System.out.println("Ferrari:" + coches[2].elmasrapido);
@@ -54,7 +51,7 @@ public class App {
         System.out.println("Indice más rápido:" + index_coche);
         System.out.println("Coche más rápido:" + coches[index_coche]);
 
-        System.out.println("Fin de la simulación!!");
+        System.out.println("Fin de la simulación!!");*/
 
         /** Usando Interfaces **/
 
@@ -67,17 +64,8 @@ public class App {
                 new Caballo()
         };
 
-        tiempos = new double[cosaQueAvanzan.length];
-        for (int i = 0; i < cosaQueAvanzan.length; i++) {
-            CosaQueAvanza cosa = cosaQueAvanzan[i];
-            cosa.iniciar();
-            tiempos[i] = cosa.avanzar(100);
-            cosa.parar();
-        }
-
-        int index_cosa = Sorter.encontrar_mas_rapido(tiempos);
-        System.out.println("Indice más rápido:" + index_cosa);
-        System.out.println("Cosa más rápido:" + cosaQueAvanzan[index_cosa]);
+        CosaQueAvanza laCosaMasRapida= ServicioCosasQueAvanzan.encontrar_mas_rapido(cosaQueAvanzan);
+        System.out.println("Cosa más rápido:" + laCosaMasRapida);
 
         System.out.println("Fin simulación CosaQueAvanza!!");
 
