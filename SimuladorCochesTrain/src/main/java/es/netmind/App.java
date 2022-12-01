@@ -1,6 +1,8 @@
 package es.netmind;
 
+import es.netmind.models.Berlina;
 import es.netmind.models.Coche;
+import es.netmind.models.Deportivo;
 import es.netmind.models.SUV;
 import es.netmind.utils.Sorter;
 
@@ -13,9 +15,9 @@ public class App {
 
 
         Coche[] coches = new Coche[]{
-                new Coche("Renault", "berlina", 120),
+                new Berlina("Renault", "berlina", 120,3),
                 new SUV("Toyota", "suv", 110, 2),
-                new Coche("Ferrari", "deportivo", 300)
+                new Deportivo("Ferrari", "deportivo", 300,250)
         };
 
         double[] tiempos = new double[]{0, 0, 0};
