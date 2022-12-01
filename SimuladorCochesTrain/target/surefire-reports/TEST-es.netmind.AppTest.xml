@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="es.netmind.AppTest" time="0.015" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="es.netmind.AppTest" time="0.011" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="c:\java\bin"/>
-    <property name="sun.java.command" value="C:\Users\admin\AppData\Local\Temp\surefire4293072730055421294\surefirebooter2027029251363956829.jar C:\Users\admin\AppData\Local\Temp\surefire4293072730055421294 2022-11-30T11-31-10_722-jvmRun1 surefire15882400286709964142tmp surefire_016930935897672890757tmp"/>
+    <property name="sun.java.command" value="C:\Users\admin\AppData\Local\Temp\surefire8759949118830675351\surefirebooter4380065123452015949.jar C:\Users\admin\AppData\Local\Temp\surefire8759949118830675351 2022-12-01T08-10-20_505-jvmRun1 surefire16138831656238687700tmp surefire_018298945968647995987tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\workspace\Java11\SimuladorCochesTrain\target\test-classes;C:\workspace\Java11\SimuladorCochesTrain\target\classes;C:\Users\admin\.m2\repository\junit\junit\4.2\junit-4.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -28,12 +28,12 @@
     <property name="java.home" value="c:\java"/>
     <property name="file.separator" value="\"/>
     <property name="basedir" value="C:\workspace\Java11\SimuladorCochesTrain"/>
-    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\admin\AppData\Local\Temp\surefire4293072730055421294\surefirebooter2027029251363956829.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\admin\AppData\Local\Temp\surefire8759949118830675351\surefirebooter4380065123452015949.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11+28"/>
@@ -60,5 +60,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testApp" classname="es.netmind.AppTest" time="0.004"/>
+  <testcase name="testApp" classname="es.netmind.AppTest" time="0.001"/>
 </testsuite>
