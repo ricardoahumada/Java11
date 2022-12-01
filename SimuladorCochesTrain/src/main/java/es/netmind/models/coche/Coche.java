@@ -8,8 +8,7 @@ public class Coche implements CosaQueAvanza {
     private int velocidad = 0;
     private boolean encendido = false;
     private double posicion = 0;
-
-    Motor motor;
+    private Motor motor;
 
     static public String elmasrapido = "";
 

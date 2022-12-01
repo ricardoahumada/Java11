@@ -35,8 +35,9 @@ public class App {
         int traccion = toyota.traccion;
         System.out.println("traccion toyota cvs:" + traccion);
 
-        toyota.setMotor(new Motor(200));
-        System.out.println("Motor toyota" + toyota.getMotor().getCv());
+        toyota.setMotor(new Motor(200,"gas"));
+        System.out.println("Motor toyota: " + toyota.getMotor());
+        System.out.println("Motor toyota cvs: " + toyota.getMotor().getCv());
 
         /*SUV renault = (SUV) coches[0];
         renault.cambiar_traccion();*/
