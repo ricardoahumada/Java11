@@ -1,6 +1,7 @@
 package es.netmind.services;
 
 import es.netmind.models.CosaQueAvanza;
+import es.netmind.services.persistence.PersistenciaCosasQueSeMueven;
 import es.netmind.utils.Sorter;
 
 public class ServicioCosasQueAvanzan {
@@ -17,5 +18,10 @@ public class ServicioCosasQueAvanzan {
         int index_cosa = Sorter.encontrar_mas_rapido(tiempos);
 
         return cosas[index_cosa];
+    }
+
+    static public boolean guardarCosa(CosaQueAvanza cosa){
+        // validar y procesar cosa
+        return PersistenciaCosasQueSeMueven.guardarCosa(cosa);
     }
 }

@@ -67,6 +67,11 @@ public class App {
         CosaQueAvanza laCosaMasRapida= ServicioCosasQueAvanzan.encontrar_mas_rapido(cosaQueAvanzan);
         System.out.println("Cosa más rápido:" + laCosaMasRapida);
 
+        // ...
+
+        boolean resultado = ServicioCosasQueAvanzan.guardarCosa(null);
+        System.out.println("resultado almacenaje: "+ resultado);
+
         System.out.println("Fin simulación CosaQueAvanza!!");
 
     }
