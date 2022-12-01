@@ -7,6 +7,8 @@ public class Coche implements CosaQueAvanza{
     private boolean encendido = false;
     private double posicion = 0;
 
+    Motor motor;
+
     static public String elmasrapido = "";
 
 
@@ -98,5 +100,13 @@ public class Coche implements CosaQueAvanza{
 
     public void setPosicion(double posicion) {
         this.posicion = posicion;
+    }
+
+    public Motor getMotor() {
+        return motor;
+    }
+
+    public void setMotor(Motor motor) {
+        this.motor = motor;
     }
 }

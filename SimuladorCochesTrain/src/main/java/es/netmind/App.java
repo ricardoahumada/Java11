@@ -8,6 +8,9 @@ import es.netmind.utils.Sorter;
  */
 public class App {
     public static void main(String[] args) {
+
+        /** Usando Herencia **/
+
         System.out.println("Iniciando la simulación ...");
 
 
@@ -29,7 +32,10 @@ public class App {
         SUV toyota = (SUV) coches[1];
         toyota.cambiar_traccion();
         int traccion = toyota.traccion;
-        System.out.println("traccion toyota:" + traccion);
+        System.out.println("traccion toyota cvs:" + traccion);
+
+        toyota.setMotor(new Motor(200));
+        System.out.println("Motor toyota" + toyota.getMotor().getCv());
 
         /*SUV renault = (SUV) coches[0];
         renault.cambiar_traccion();*/
@@ -47,6 +53,8 @@ public class App {
         System.out.println("Coche más rápido:" + coches[index_coche]);
 
         System.out.println("Fin de la simulación!!");
+
+        /** Usando Interfaces **/
 
         System.out.println("Inicio simulación CosaQueAvanza ...");
 
