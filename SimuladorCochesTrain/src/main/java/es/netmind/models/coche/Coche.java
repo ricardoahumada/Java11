@@ -110,4 +110,5 @@ public class Coche implements CosaQueAvanza {
     public void setMotor(Motor motor) {
         this.motor = motor;
     }
+
 }
