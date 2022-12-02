@@ -7,7 +7,9 @@ import es.netmind.models.coche.Berlina;
 import es.netmind.models.coche.Deportivo;
 import es.netmind.models.coche.SUV;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class PersistenciaCosasQueSeMueven implements IPersistenciaCosasQueSeMueven {
@@ -41,7 +43,7 @@ public class PersistenciaCosasQueSeMueven implements IPersistenciaCosasQueSeMuev
         } else return false;
     }
 
-    public boolean guardarCosa(String clave ,CosaQueAvanza cosa) throws Exception, NullPointerException, MyException {
+    public boolean guardarCosa(String clave, CosaQueAvanza cosa) throws Exception, NullPointerException, MyException {
 
         try {
             cojuntoCosas.put(clave, cosa);
@@ -56,5 +58,11 @@ public class PersistenciaCosasQueSeMueven implements IPersistenciaCosasQueSeMuev
             throw new Exception("BBDD rota");
         }
 
+    }
+
+    @Override
+    public List<CosaQueAvanza> getCosas() {
+        List<CosaQueAvanza> listofvalues = new ArrayList(cojuntoCosas.values());
+        return listofvalues;
     }
 }

@@ -24,13 +24,14 @@ public class ServicioCosasQueAvanzan {
     }
 
     static public CosaQueAvanza encontrar_mas_rapido(List<CosaQueAvanza> cosas) {
-        double[] tiempos = new double[cosas.size()];
-        for (int i = 0; i < cosas.size(); i++) {
-            CosaQueAvanza cosa = cosas.get(i);
-            cosa.iniciar();
-            tiempos[i] = cosa.avanzar(100);
-            cosa.parar();
-        }
+        if (cosas != null) {
+            double[] tiempos = new double[cosas.size()];
+            for (int i = 0; i < cosas.size(); i++) {
+                CosaQueAvanza cosa = cosas.get(i);
+                cosa.iniciar();
+                tiempos[i] = cosa.avanzar(100);
+                cosa.parar();
+            }
 
         /*for (CosaQueAvanza cqa : cosas) {
             System.out.println("cqa:" + cqa);
@@ -41,18 +42,22 @@ public class ServicioCosasQueAvanzan {
             System.out.println("cqa it:" + iterator.next());
         }*/
 
-        int index_cosa = Sorter.encontrar_mas_rapido(tiempos);
-
-        if(index_cosa>=0) return cosas.get(index_cosa);
-        else return null;
+            int index_cosa = Sorter.encontrar_mas_rapido(tiempos);
+            if (index_cosa >= 0) return cosas.get(index_cosa);
+            else return null;
+        } else return null;
     }
 
     static public boolean guardarCosa(String clave, CosaQueAvanza cosa) throws NullPointerException, Exception {
-        if (cosa != null) return PersistenciaCosasQueSeMueven.getInstance().guardarCosa(clave,cosa);
+        if (cosa != null) return PersistenciaCosasQueSeMueven.getInstance().guardarCosa(clave, cosa);
         else throw new NullPointerException("Valores nulos");
     }
 
     static public boolean borrarCosa(String clave) {
         return PersistenciaCosasQueSeMueven.getInstance().eliminarCosa(clave);
+    }
+
+    static public List<CosaQueAvanza> dameLista() {
+        return PersistenciaCosasQueSeMueven.getInstance().getCosas();
     }
 }

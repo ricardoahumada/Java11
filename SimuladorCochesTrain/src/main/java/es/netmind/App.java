@@ -89,7 +89,8 @@ public class App {
         System.out.println("\n-----------------------------\n");
 
         System.out.println("obteniendo datos de bbdd para simulación....");
-        List<CosaQueAvanza> listaCosasQueAvanzan = new ArrayList();
+        List<CosaQueAvanza> listaCosasQueAvanzan = ServicioCosasQueAvanzan.dameLista();
+        System.out.println("listaCosasQueAvanzan:" + listaCosasQueAvanzan);
 
         System.out.println("\n-----------------------------\n");
         System.out.println("claculabdo....");
@@ -97,7 +98,6 @@ public class App {
         System.out.println("Cosa más rápida list:" + laCosaMasRapidaList);
 
         System.out.println("\n-----------------------------\n");
-
 
         try {
             boolean resultado = ServicioCosasQueAvanzan.guardarCosa("seat", new Berlina("seat", "berlina", 120, 3));
