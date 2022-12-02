@@ -81,6 +81,10 @@ public class App {
             System.out.println("cqa:" + cqa);
         }
 
+        for (int i = 0; i < listaCosasQueAvanzan.size(); i++) {
+            System.out.println("cqa i:" + listaCosasQueAvanzan.get(i));
+        }
+        
         ListIterator<CosaQueAvanza> iterator = listaCosasQueAvanzan.listIterator();
         while (iterator.hasNext()) {
             System.out.println("cqa it:" + iterator.next());
