@@ -10,7 +10,7 @@ public class PersistenciaCosasQueSeMuevenTest {
     public void getCosas() {
         PersistenciaCosasQueSeMueven pcqm = PersistenciaCosasQueSeMueven.getInstance();
         int init_size = pcqm.getCosas().size();
-        assertEquals(init_size, 0);
+        assertEquals(0, init_size);
     }
 
     @Test
