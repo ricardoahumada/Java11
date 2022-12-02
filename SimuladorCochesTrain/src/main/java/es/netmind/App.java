@@ -69,10 +69,11 @@ public class App {
         };
 
         CosaQueAvanza laCosaMasRapida = ServicioCosasQueAvanzan.encontrar_mas_rapido(cosaQueAvanzan);
-        System.out.println("Cosa más rápido:" + laCosaMasRapida);
+        // System.out.println("Cosa más rápido:" + laCosaMasRapida);
 
         System.out.println("\n-----------------------------\n");
 
+        System.out.println("cargando datos en bbdd....");
 
         try {
             ServicioCosasQueAvanzan.guardarCosa("renault", cosaQueAvanzan[0]);
@@ -87,10 +88,11 @@ public class App {
 
         System.out.println("\n-----------------------------\n");
 
+        System.out.println("obteniendo datos de bbdd para simulación....");
         List<CosaQueAvanza> listaCosasQueAvanzan = new ArrayList();
 
         System.out.println("\n-----------------------------\n");
-
+        System.out.println("claculabdo....");
         CosaQueAvanza laCosaMasRapidaList = ServicioCosasQueAvanzan.encontrar_mas_rapido(listaCosasQueAvanzan);
         System.out.println("Cosa más rápida list:" + laCosaMasRapidaList);
 
