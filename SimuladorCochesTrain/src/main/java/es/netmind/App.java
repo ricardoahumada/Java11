@@ -5,6 +5,10 @@ import es.netmind.models.coche.*;
 import es.netmind.services.ServicioCosasQueAvanzan;
 import es.netmind.utils.Sorter;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ListIterator;
+
 /**
  * Hello world!
  */
@@ -64,6 +68,25 @@ public class App {
                 new Caballo()
         };
 
+        List<CosaQueAvanza> listaCosasQueAvanzan = new ArrayList();
+        System.out.println("listaCosasQueAvanzan:" + listaCosasQueAvanzan.size());
+        listaCosasQueAvanzan.add(new Berlina("Renault", "berlina", 120, 3));
+        System.out.println("listaCosasQueAvanzan:" + listaCosasQueAvanzan.size());
+        listaCosasQueAvanzan.add(cosaQueAvanzan[1]);
+        listaCosasQueAvanzan.add(cosaQueAvanzan[2]);
+        listaCosasQueAvanzan.add(cosaQueAvanzan[3]);
+        System.out.println("listaCosasQueAvanzan:" + listaCosasQueAvanzan.size());
+
+        for (CosaQueAvanza cqa : listaCosasQueAvanzan) {
+            System.out.println("cqa:" + cqa);
+        }
+
+        ListIterator<CosaQueAvanza> iterator = listaCosasQueAvanzan.listIterator();
+        while (iterator.hasNext()) {
+            System.out.println("cqa it:" + iterator.next());
+        }
+
+
         CosaQueAvanza laCosaMasRapida = ServicioCosasQueAvanzan.encontrar_mas_rapido(cosaQueAvanzan);
         System.out.println("Cosa más rápido:" + laCosaMasRapida);
 
@@ -73,9 +96,9 @@ public class App {
             boolean resultado = ServicioCosasQueAvanzan.guardarCosa(null);
             if (resultado) System.out.println("Se ha almacenado la cosa");
             else System.out.println("NO se ha almacenado la cosa");
-        }catch (NullPointerException e){
+        } catch (NullPointerException e) {
             System.out.println("ERROR: La cosa debe tener valores");
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println("Oppss: tenemos problemas en el sistema...intentalo más tarde, please");
         }
 
