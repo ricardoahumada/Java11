@@ -1,7 +1,7 @@
 package es.netmind.services;
 
 import es.netmind.models.CosaQueAvanza;
-import es.netmind.services.persistence.PersistenciaCosasQueSeMueven;
+import es.netmind.persistence.PersistenciaCosasQueSeMueven;
 import es.netmind.utils.Sorter;
 
 public class ServicioCosasQueAvanzan {
@@ -21,7 +21,7 @@ public class ServicioCosasQueAvanzan {
     }
 
     static public boolean guardarCosa(CosaQueAvanza cosa) throws NullPointerException,Exception{
-        if(cosa!=null) return PersistenciaCosasQueSeMueven.guardarCosa(cosa);
+        if(cosa!=null) return new PersistenciaCosasQueSeMueven().guardarCosa(cosa);
         else throw new NullPointerException("Valores nulos");
     }
 
