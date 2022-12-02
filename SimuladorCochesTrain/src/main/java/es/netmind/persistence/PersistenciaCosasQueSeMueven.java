@@ -42,12 +42,12 @@ public class PersistenciaCosasQueSeMueven implements IPersistenciaCosasQueSeMuev
         } else return false;
     }
 
-    public boolean guardarCosa(CosaQueAvanza cosa) throws Exception, NullPointerException, MyException {
+    public boolean guardarCosa(String clave ,CosaQueAvanza cosa) throws Exception, NullPointerException, MyException {
 
         try {
-            cojuntoCosas.put("cosa_nueva", cosa);
+            cojuntoCosas.put(clave, cosa);
             System.out.println("cojuntoCosas nuevo:" + cojuntoCosas.size());
-            System.out.println("cojuntoCosas cosa_nueva:" + cojuntoCosas.get("cosa_nueva"));
+            System.out.println("cojuntoCosas cosa_nueva:" + cojuntoCosas.get(clave));
             return true;
         } catch (NullPointerException e) {
             // avisar a developer

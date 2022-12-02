@@ -46,8 +46,8 @@ public class ServicioCosasQueAvanzan {
         return cosas.get(index_cosa);
     }
 
-    static public boolean guardarCosa(CosaQueAvanza cosa) throws NullPointerException, Exception {
-        if (cosa != null) return PersistenciaCosasQueSeMueven.getInstance().guardarCosa(cosa);
+    static public boolean guardarCosa(String clave, CosaQueAvanza cosa) throws NullPointerException, Exception {
+        if (cosa != null) return PersistenciaCosasQueSeMueven.getInstance().guardarCosa(clave,cosa);
         else throw new NullPointerException("Valores nulos");
     }
 

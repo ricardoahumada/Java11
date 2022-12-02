@@ -88,9 +88,9 @@ public class App {
 
 
         try {
-            boolean resultado = ServicioCosasQueAvanzan.guardarCosa(new Berlina("seat", "berlina", 120, 3));
-            if (resultado) System.out.println("Se ha almacenado la cosa");
-            else System.out.println("NO se ha almacenado la cosa");
+            boolean resultado = ServicioCosasQueAvanzan.guardarCosa("seat",new Berlina("seat", "berlina", 120, 3));
+            if (resultado) System.out.println("Se ha almacenado la cosa :-)");
+            else System.out.println("NO se ha almacenado la cosa :-(");
         } catch (NullPointerException e) {
             System.out.println("ERROR: La cosa debe tener valores");
         } catch (Exception e) {
