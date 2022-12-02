@@ -59,7 +59,7 @@ public class App {
 
         /** Usando Interfaces **/
 
-        System.out.println("Inicio simulación CosaQueAvanza ...");
+        System.out.println("Inicio simulación CosaQueAvanza ...\n");
 
         CosaQueAvanza[] cosaQueAvanzan = new CosaQueAvanza[]{
                 new Berlina("Renault", "berlina", 120, 3),
@@ -68,36 +68,27 @@ public class App {
                 new Caballo()
         };
 
-        List<CosaQueAvanza> listaCosasQueAvanzan = new ArrayList();
-        System.out.println("listaCosasQueAvanzan:" + listaCosasQueAvanzan.size());
-        listaCosasQueAvanzan.add(new Berlina("Renault", "berlina", 120, 3));
-        System.out.println("listaCosasQueAvanzan:" + listaCosasQueAvanzan.size());
-        listaCosasQueAvanzan.add(cosaQueAvanzan[1]);
-        listaCosasQueAvanzan.add(cosaQueAvanzan[2]);
-        listaCosasQueAvanzan.add(cosaQueAvanzan[3]);
-        System.out.println("listaCosasQueAvanzan:" + listaCosasQueAvanzan.size());
-
-        for (CosaQueAvanza cqa : listaCosasQueAvanzan) {
-            System.out.println("cqa:" + cqa);
-        }
-
-        for (int i = 0; i < listaCosasQueAvanzan.size(); i++) {
-            System.out.println("cqa i:" + listaCosasQueAvanzan.get(i));
-        }
-        
-        ListIterator<CosaQueAvanza> iterator = listaCosasQueAvanzan.listIterator();
-        while (iterator.hasNext()) {
-            System.out.println("cqa it:" + iterator.next());
-        }
-
-
         CosaQueAvanza laCosaMasRapida = ServicioCosasQueAvanzan.encontrar_mas_rapido(cosaQueAvanzan);
         System.out.println("Cosa más rápido:" + laCosaMasRapida);
 
+        System.out.println("\n-----------------------------\n");
+
+        List<CosaQueAvanza> listaCosasQueAvanzan = new ArrayList();
+        listaCosasQueAvanzan.add(new Berlina("Renault", "berlina", 120, 3));
+        listaCosasQueAvanzan.add(cosaQueAvanzan[1]);
+        listaCosasQueAvanzan.add(cosaQueAvanzan[2]);
+        listaCosasQueAvanzan.add(cosaQueAvanzan[3]);
+
+        CosaQueAvanza laCosaMasRapidaList = ServicioCosasQueAvanzan.encontrar_mas_rapido(listaCosasQueAvanzan);
+        System.out.println("Cosa más rápida list:" + laCosaMasRapidaList);
+
+
         // ...
+        System.out.println("\n-----------------------------\n");
+
 
         try {
-            boolean resultado = ServicioCosasQueAvanzan.guardarCosa(null);
+            boolean resultado = ServicioCosasQueAvanzan.guardarCosa(new Berlina("seat", "berlina", 120, 3));
             if (resultado) System.out.println("Se ha almacenado la cosa");
             else System.out.println("NO se ha almacenado la cosa");
         } catch (NullPointerException e) {
@@ -106,7 +97,11 @@ public class App {
             System.out.println("Oppss: tenemos problemas en el sistema...intentalo más tarde, please");
         }
 
-        System.out.println("Fin simulación CosaQueAvanza!!");
+        System.out.println("\n-----------------------------\n");
+
+        boolean res_borrar = ServicioCosasQueAvanzan.borrarCosa("ferrari");
+
+        System.out.println("\nFin simulación CosaQueAvanza!!");
 
     }
 }
