@@ -14,7 +14,9 @@ public class PersistenciaCosasQueSeMueven implements IPersistenciaCosasQueSeMuev
 
     Map<String, CosaQueAvanza> cojuntoCosas = new HashMap();
 
-    public PersistenciaCosasQueSeMueven() {
+    private static PersistenciaCosasQueSeMueven INSTANCE;
+
+    private PersistenciaCosasQueSeMueven() {
         cojuntoCosas.put("renault", new Berlina("Renault", "berlina", 120, 3));
         cojuntoCosas.put("toyota", new SUV("Toyota", "suv", 110, 2));
         cojuntoCosas.put("ferrari", new Deportivo("Ferrari", "deportivo", 300, 250));
@@ -22,6 +24,13 @@ public class PersistenciaCosasQueSeMueven implements IPersistenciaCosasQueSeMuev
 
         System.out.println("cojuntoCosas:" + cojuntoCosas.size());
         System.out.println("cojuntoCosas ferrari:" + cojuntoCosas.get("ferrari"));
+    }
+
+    public static PersistenciaCosasQueSeMueven getInstance() {
+        if (INSTANCE == null) {
+            INSTANCE = new PersistenciaCosasQueSeMueven();
+        }
+        return INSTANCE;
     }
 
     public boolean eliminarCosa(String clave) {

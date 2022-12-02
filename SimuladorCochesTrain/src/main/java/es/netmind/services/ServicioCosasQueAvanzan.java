@@ -47,11 +47,11 @@ public class ServicioCosasQueAvanzan {
     }
 
     static public boolean guardarCosa(CosaQueAvanza cosa) throws NullPointerException, Exception {
-        if (cosa != null) return new PersistenciaCosasQueSeMueven().guardarCosa(cosa);
+        if (cosa != null) return PersistenciaCosasQueSeMueven.getInstance().guardarCosa(cosa);
         else throw new NullPointerException("Valores nulos");
     }
 
     static public boolean borrarCosa(String clave) {
-        return new PersistenciaCosasQueSeMueven().eliminarCosa(clave);
+        return PersistenciaCosasQueSeMueven.getInstance().eliminarCosa(clave);
     }
 }
