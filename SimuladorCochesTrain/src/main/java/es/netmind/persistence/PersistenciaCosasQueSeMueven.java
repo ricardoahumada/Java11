@@ -12,7 +12,7 @@ import java.util.Map;
 
 public class PersistenciaCosasQueSeMueven implements IPersistenciaCosasQueSeMueven {
 
-    Map<String, CosaQueAvanza> cojuntoCosas = new HashMap();
+    private static Map<String, CosaQueAvanza> cojuntoCosas = new HashMap();
 
     private static PersistenciaCosasQueSeMueven INSTANCE;
 
