@@ -7,6 +7,7 @@ import static org.junit.Assert.*;
 
 public class PersistenciaCosasQueSeMuevenTest {
 
+
     @Test
     public void getCosas() {
         PersistenciaCosasQueSeMueven pcqm = PersistenciaCosasQueSeMueven.getInstance();
