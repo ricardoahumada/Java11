@@ -43,7 +43,8 @@ public class ServicioCosasQueAvanzan {
 
         int index_cosa = Sorter.encontrar_mas_rapido(tiempos);
 
-        return cosas.get(index_cosa);
+        if(index_cosa>=0) return cosas.get(index_cosa);
+        else return null;
     }
 
     static public boolean guardarCosa(String clave, CosaQueAvanza cosa) throws NullPointerException, Exception {

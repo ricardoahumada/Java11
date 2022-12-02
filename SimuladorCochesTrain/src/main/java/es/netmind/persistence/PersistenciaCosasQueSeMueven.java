@@ -17,13 +17,12 @@ public class PersistenciaCosasQueSeMueven implements IPersistenciaCosasQueSeMuev
     private static PersistenciaCosasQueSeMueven INSTANCE;
 
     private PersistenciaCosasQueSeMueven() {
-        cojuntoCosas.put("renault", new Berlina("Renault", "berlina", 120, 3));
+        /*cojuntoCosas.put("renault", new Berlina("Renault", "berlina", 120, 3));
         cojuntoCosas.put("toyota", new SUV("Toyota", "suv", 110, 2));
         cojuntoCosas.put("ferrari", new Deportivo("Ferrari", "deportivo", 300, 250));
-        cojuntoCosas.put("caballo", new Caballo());
+        cojuntoCosas.put("caballo", new Caballo());*/
 
-        System.out.println("cojuntoCosas:" + cojuntoCosas.size());
-        System.out.println("cojuntoCosas ferrari:" + cojuntoCosas.get("ferrari"));
+        System.out.println("cojuntoCosas inicial:" + cojuntoCosas.size());
     }
 
     public static PersistenciaCosasQueSeMueven getInstance() {
@@ -46,8 +45,8 @@ public class PersistenciaCosasQueSeMueven implements IPersistenciaCosasQueSeMuev
 
         try {
             cojuntoCosas.put(clave, cosa);
-            System.out.println("cojuntoCosas nuevo:" + cojuntoCosas.size());
             System.out.println("cojuntoCosas cosa_nueva:" + cojuntoCosas.get(clave));
+            System.out.println("cojuntoCosas nuevo:" + cojuntoCosas.size());
             return true;
         } catch (NullPointerException e) {
             // avisar a developer

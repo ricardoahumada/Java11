@@ -73,22 +73,32 @@ public class App {
 
         System.out.println("\n-----------------------------\n");
 
+
+        try {
+            ServicioCosasQueAvanzan.guardarCosa("renault", cosaQueAvanzan[0]);
+            ServicioCosasQueAvanzan.guardarCosa("toyota", cosaQueAvanzan[1]);
+            ServicioCosasQueAvanzan.guardarCosa("ferrari", cosaQueAvanzan[2]);
+            ServicioCosasQueAvanzan.guardarCosa("caballo", cosaQueAvanzan[3]);
+        } catch (NullPointerException e) {
+            System.out.println("ERROR: La cosa debe tener valores");
+        } catch (Exception e) {
+            System.out.println("Oppss: tenemos problemas en el sistema...intentalo más tarde, please");
+        }
+
+        System.out.println("\n-----------------------------\n");
+
         List<CosaQueAvanza> listaCosasQueAvanzan = new ArrayList();
-        listaCosasQueAvanzan.add(new Berlina("Renault", "berlina", 120, 3));
-        listaCosasQueAvanzan.add(cosaQueAvanzan[1]);
-        listaCosasQueAvanzan.add(cosaQueAvanzan[2]);
-        listaCosasQueAvanzan.add(cosaQueAvanzan[3]);
+
+        System.out.println("\n-----------------------------\n");
 
         CosaQueAvanza laCosaMasRapidaList = ServicioCosasQueAvanzan.encontrar_mas_rapido(listaCosasQueAvanzan);
         System.out.println("Cosa más rápida list:" + laCosaMasRapidaList);
 
-
-        // ...
         System.out.println("\n-----------------------------\n");
 
 
         try {
-            boolean resultado = ServicioCosasQueAvanzan.guardarCosa("seat",new Berlina("seat", "berlina", 120, 3));
+            boolean resultado = ServicioCosasQueAvanzan.guardarCosa("seat", new Berlina("seat", "berlina", 120, 3));
             if (resultado) System.out.println("Se ha almacenado la cosa :-)");
             else System.out.println("NO se ha almacenado la cosa :-(");
         } catch (NullPointerException e) {
