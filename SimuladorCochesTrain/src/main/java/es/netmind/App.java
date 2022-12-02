@@ -48,8 +48,14 @@ public class App {
         List<CosaQueAvanza> listaCosasQueAvanzan = ServicioCosasQueAvanzan.dameLista();
         System.out.println("listaCosasQueAvanzan:" + listaCosasQueAvanzan);
 
+        listaCosasQueAvanzan.forEach(
+                (elem) -> {
+                    System.out.println("Lambda show cosa:" + elem);
+                }
+        );
+
         System.out.println("\n-----------------------------\n");
-        System.out.println("claculabdo....");
+        System.out.println("calculabdo....");
         CosaQueAvanza laCosaMasRapidaList = ServicioCosasQueAvanzan.encontrar_mas_rapido(listaCosasQueAvanzan);
         System.out.println("Cosa más rápida list:" + laCosaMasRapidaList);
 
