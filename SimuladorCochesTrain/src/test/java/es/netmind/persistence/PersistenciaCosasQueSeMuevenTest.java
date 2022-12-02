@@ -14,6 +14,14 @@ public class PersistenciaCosasQueSeMuevenTest {
     }
 
     @Test
+    public void procesoDeAddCosa(){
+        //obtego la persistencia
+        //valido tamaño inicial
+        //añado elemento
+        //valido tamaño final
+    }
+
+    @Test
     public void eliminarCosa() {
     }
 
