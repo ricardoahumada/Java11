@@ -45,6 +45,7 @@ public class PersistenciaCosasQueSeMueven implements IPersistenciaCosasQueSeMuev
 
     public boolean guardarCosa(String clave, CosaQueAvanza cosa) throws Exception, NullPointerException, MyException {
 
+        if (clave == null || cosa == null) throw new MyException("Valores nulos");
         try {
             cojuntoCosas.put(clave, cosa);
             System.out.println("cojuntoCosas cosa_nueva:" + cojuntoCosas.get(clave));
