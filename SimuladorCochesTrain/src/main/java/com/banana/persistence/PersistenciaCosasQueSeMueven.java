@@ -1,11 +1,11 @@
-package es.netmind.persistence;
+package com.banana.persistence;
 
-import es.netmind.exceptions.MyException;
-import es.netmind.models.Caballo;
-import es.netmind.models.CosaQueAvanza;
-import es.netmind.models.coche.Berlina;
-import es.netmind.models.coche.Deportivo;
-import es.netmind.models.coche.SUV;
+import com.banana.exceptions.MyException;
+import com.banana.models.Caballo;
+import com.banana.models.CosaQueAvanza;
+import com.banana.models.coche.Berlina;
+import com.banana.models.coche.Deportivo;
+import com.banana.models.coche.SUV;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package es.netmind.utils;
+package com.banana.utils;
 
 public class Sorter {
 

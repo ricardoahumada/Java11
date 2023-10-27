@@ -1,4 +1,4 @@
-package es.netmind.models;
+package com.banana.models;
 
 public class Caballo implements CosaQueAvanza{
     public String raza="";

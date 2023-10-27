@@ -1,8 +1,8 @@
-package es.netmind.services;
+package com.banana.services;
 
-import es.netmind.models.CosaQueAvanza;
-import es.netmind.persistence.PersistenciaCosasQueSeMueven;
-import es.netmind.utils.Sorter;
+import com.banana.models.CosaQueAvanza;
+import com.banana.persistence.PersistenciaCosasQueSeMueven;
+import com.banana.utils.Sorter;
 
 import java.util.List;
 import java.util.ListIterator;

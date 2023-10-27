@@ -1,6 +1,6 @@
-package es.netmind.persistence;
+package com.banana.persistence;
 
-import es.netmind.models.Caballo;
+import com.banana.models.Caballo;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

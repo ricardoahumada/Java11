@@ -1,6 +1,6 @@
-package es.netmind.persistence;
+package com.banana.persistence;
 
-import es.netmind.models.CosaQueAvanza;
+import com.banana.models.CosaQueAvanza;
 
 import java.util.List;
 

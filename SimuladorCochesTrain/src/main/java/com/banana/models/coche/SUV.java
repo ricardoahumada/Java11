@@ -1,4 +1,4 @@
-package es.netmind.models.coche;
+package com.banana.models.coche;
 
 public class SUV extends Coche  {
     public int num_marchas = 0;

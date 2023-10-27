@@ -1,4 +1,4 @@
-package es.netmind;
+package com.banana;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

@@ -1,4 +1,4 @@
-package es.netmind.models;
+package com.banana.models;
 
 public interface CosaQueAvanza {
     public double avanzar(int kms);

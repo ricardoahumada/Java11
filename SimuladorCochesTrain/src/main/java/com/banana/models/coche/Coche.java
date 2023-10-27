@@ -1,6 +1,6 @@
-package es.netmind.models.coche;
+package com.banana.models.coche;
 
-import es.netmind.models.CosaQueAvanza;
+import com.banana.models.CosaQueAvanza;
 
 public class Coche implements CosaQueAvanza {
     private String marca = null;

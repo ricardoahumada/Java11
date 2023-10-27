@@ -1,4 +1,4 @@
-package es.netmind.exceptions;
+package com.banana.exceptions;
 
 public class MyException extends Exception{
 

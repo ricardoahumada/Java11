@@ -1,9 +1,9 @@
-package es.netmind;
+package com.banana;
 
-import es.netmind.models.*;
-import es.netmind.models.coche.*;
-import es.netmind.services.ServicioCosasQueAvanzan;
-import es.netmind.utils.Sorter;
+import com.banana.models.*;
+import com.banana.models.coche.*;
+import com.banana.services.ServicioCosasQueAvanzan;
+import com.banana.utils.Sorter;
 
 import java.util.ArrayList;
 import java.util.List;
